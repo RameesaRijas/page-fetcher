@@ -11,8 +11,7 @@ request(args[0], (error, response, body) => {
     if (error) {
       console.log("Directory does not exist.")
       process.exit();
-    }
-    else {
+    } else {
     fs.writeFile(args[1], body, err => {
       if (err) {
         console.error(err)
